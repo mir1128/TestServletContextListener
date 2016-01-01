@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'idea'
+apply plugin: 'jetty'
+
+group = 'com.loobo'
+version = '1.0-SNAPSHOT'
+
+description = """A custom project"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'log4j:log4j:1.2.17'
+    testCompile 'junit:junit:4.12'
+}
